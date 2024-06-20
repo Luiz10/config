@@ -1,6 +1,6 @@
 spring:
   datasource:
-    password: password
-    username: sa
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:testdb
+    password: ${{secrets.PASSWORD_DEV}}
+    username: ${{secrets.USERNAME_DEV}}
+    driver-class-name:  ${{secrets.DRIVE_CLASS_NAME_DEV}}
+    url: ${{secrets.URL_DEV}}
